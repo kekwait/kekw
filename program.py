@@ -1,15 +1,16 @@
 def fact(n):
+	if n<0:
+		return 0
 	if n==0:
 		return 1
 
 	else:
 		return n*fact(n-1)
 
-isActive = True
-while isActive:
-	n = int(input("Введите число: "))
-	if n<0:
-		isActive = False
-	else:
-		print(fact(n))
+def pow(n, a):
+	return n**a
+
+n = int(input("Введите число: "))
+print(fact(n))
+print(pow(n, 5))
 
